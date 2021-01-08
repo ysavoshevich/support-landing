@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Lota Grotesque Bold It';
+    src: url('LotaGrotesque-BoldIt.woff2') format('woff2'),
+        url('LotaGrotesque-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque Black It';
+    src: url('LotaGrotesque-BlackIt.woff2') format('woff2'),
+        url('LotaGrotesque-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque';
+    src: url('LotaGrotesque-Black.woff2') format('woff2'),
+        url('LotaGrotesque-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque Extra Light It';
+    src: url('LotaGrotesque-ExtraLightIt.woff2') format('woff2'),
+        url('LotaGrotesque-ExtraLightIt.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque Extra';
+    src: url('LotaGrotesque-ExtraLight.woff2') format('woff2'),
+        url('LotaGrotesque-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque';
+    src: url('LotaGrotesque-Bold.woff2') format('woff2'),
+        url('LotaGrotesque-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque Semi';
+    src: url('LotaGrotesque-SemiBold.woff2') format('woff2'),
+        url('LotaGrotesque-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque';
+    src: url('LotaGrotesque-Light.woff2') format('woff2'),
+        url('LotaGrotesque-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque Semi Bold It';
+    src: url('LotaGrotesque-SemiBoldIt.woff2') format('woff2'),
+        url('LotaGrotesque-SemiBoldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque It';
+    src: url('LotaGrotesque-RegularIt.woff2') format('woff2'),
+        url('LotaGrotesque-RegularIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque Thin It';
+    src: url('LotaGrotesque-ThinIt.woff2') format('woff2'),
+        url('LotaGrotesque-ThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque';
+    src: url('LotaGrotesque-Regular.woff2') format('woff2'),
+        url('LotaGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque Light It';
+    src: url('LotaGrotesque-LightIt.woff2') format('woff2'),
+        url('LotaGrotesque-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lota Grotesque';
+    src: url('LotaGrotesque-Thin.woff2') format('woff2'),
+        url('LotaGrotesque-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

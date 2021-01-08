@@ -1,0 +1,45 @@
+{
+  "name": "skupos-together",
+  "version": "1.0.0",
+  "private": true,
+  "description": "skupos-together",
+  "author": "@unikorns",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.26.1",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-manifest": "^2.9.0",
+    "gatsby-plugin-postcss": "^2.3.4",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-robots-txt": "^1.5.5",
+    "gatsby-plugin-sass": "^2.8.0",
+    "gatsby-plugin-sharp": "^2.11.1",
+    "gatsby-source-filesystem": "^2.8.0",
+    "gatsby-transformer-sharp": "^2.9.0",
+    "node-sass": "^4.13.0",
+    "postcss": "^8.2.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^6.14.0",
+    "react-reveal": "^1.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "resolve-url-loader": "^3.1.2",
+    "tailwindcss": "^1.1.4"
+  }
+}
