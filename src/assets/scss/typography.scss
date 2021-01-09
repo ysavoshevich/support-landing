@@ -1,80 +1,85 @@
-.text-62px {
+.text-64px {
   @apply font-semibold;
-  font-size: remify(44px);
-  line-height: remify(44px);
+  font-size: remify(30px);
+  line-height: remify(38px);
+  @screen md {
+    font-size: remify(36px);
+    line-height: remify(60px);
+  }
   @screen lg {
-    font-size: remify(62px);
-    line-height: remify(62px);
+    font-size: remify(45px);
+    line-height: remify(70px);
+  }
+  @screen xl {
+    font-size: remify(64px);
+    line-height: remify(80px);
   }
 }
-.text-48px {
-  @apply font-bold;
-  font-size: remify(36px);
-  line-height: remify(40px);
-  @screen lg {
-    font-size: remify(48px);
-    line-height: remify(52px);
-  }
-}
-.text-48px-normal {
-  font-size: remify(32px);
-  line-height: remify(40px);
-  @screen lg {
-    font-size: remify(48px);
-    line-height: remify(54px);
-  }
-}
-.text-32px {
-  @apply font-bold;
+.text-40px {
+  @apply font-semibold;
   font-size: remify(24px);
-  line-height: remify(44px);
+  line-height: remify(40px);
+  @screen md {
+    font-size: remify(36px);
+    line-height: remify(50px);
+  }
   @screen lg {
-    font-size: remify(32px);
-    line-height: remify(52px);
+    font-size: remify(40px);
+    line-height: remify(60px);
   }
 }
-.text-24px {
+.text-30px {
   @apply font-semibold;
-  font-size: remify(18px);
-  line-height: remify(24px);
+  font-size: remify(30px);
+  line-height: remify(45px);
   @screen lg {
-    font-size: remify(24px);
-    line-height: remify(32px);
+    font-size: remify(30px);
+    line-height: remify(55px);
   }
 }
 .text-22px {
-  font-size: remify(18px);
-  line-height: remify(26px);
+  @apply font-semibold;
+  font-size: remify(22px);
+  line-height: remify(28px);
   @screen lg {
     font-size: remify(22px);
-    line-height: remify(32px);
+    line-height: remify(28px);
   }
 }
 .text-20px {
-  font-size: remify(18px);
-  line-height: remify(26px);
+  @apply font-semibold;
+  font-size: remify(16px);
+  line-height: remify(30px);
   @screen lg {
     font-size: remify(20px);
-    line-height: remify(32px);
+    line-height: remify(30px);
   }
 }
 .text-18px {
-  font-size: remify(18px);
-  line-height: remify(18px);
+  font-size: remify(14px);
+  line-height: remify(24px);
+  @screen md {
+    font-size: remify(16px);
+    line-height: remify(32px);
+  }
+  @screen lg {
+    font-size: remify(18px);
+    line-height: remify(42px);
+  }
 }
 .text-16px {
-  font-size: remify(16px);
-  line-height: remify(21px);
-}
-.text-14px {
   font-size: remify(14px);
-  line-height: remify(23px);
+  line-height: remify(30px);
+  @screen lg {
+    font-size: remify(16px);
+    line-height: remify(35px);
+  }
 }
-.text-13px {
-  font-size: remify(13px);
-  line-height: remify(17px);
-}
-.text-12px {
-  font-size: remify(12px);
-  line-height: remify(20px);
+.text-15px {
+  font-size: remify(15px);
+  line-height: remify(32px);
+  @screen lg {
+    font-size: remify(15px);
+    line-height: remify(32px);
+  }
 }

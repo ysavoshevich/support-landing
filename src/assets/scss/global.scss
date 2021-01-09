@@ -18,5 +18,41 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.rc-tabs {
+  border: none !important;
+}
+.rc-tabs-tab {
+  background-color: transparent !important;
+  padding: 5px;
+  text-transform: capitalize;
+}
+.rc-tabs-tab .rc-tabs-tab-btn {
+  font-weight: normal;
+}
+.rc-tabs-tab.rc-tabs-tab-active {
+  color: #ffc059;
+}
+
+.rc-tabs-tab.rc-tabs-tab-active svg {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.rc-tabs-tab.rc-tabs-tab-active svg path {
+  fill: #ffc059;
+}
+
+.rc-tabs-ink-bar {
+  background: #ffc059 !important;
+}
+.rc-tabs-content-holder {
+  padding: 10px;
+}
+.rc-tabs-content {
+}
+
+.rc-tabs-tab-btn {
+  background-color: transparent !important;
+}
+
 @import 'fonts';
 @import 'typography';

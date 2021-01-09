@@ -1,0 +1,15 @@
+fragment FeatureBlock on FeatureBlock {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  heading
+  text
+  featuresSection {
+    ... on FeaturesSection {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

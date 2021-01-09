@@ -1,0 +1,18 @@
+fragment PricingBlock on PricingBlock {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  heading
+  price
+  text
+  positivePoints
+  negativePoints
+  pricingSection {
+    ... on PricingSection {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

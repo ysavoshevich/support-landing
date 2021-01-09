@@ -1,0 +1,23 @@
+fragment TestimonialBlock on TestimonialBlock {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  username
+  name
+  text
+  avatar {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+    }
+  }
+  testimonialSection {
+    ... on TestimonialSection {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

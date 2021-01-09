@@ -1,0 +1,40 @@
+fragment HeroSection on HeroSection {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  title
+  text
+  image {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+    }
+  }
+  sponsors {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+    }
+  }
+  inputPlaceholder
+  buttonText
+  page {
+    ... on Page {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  sponsors2 {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  sponsors3
+}

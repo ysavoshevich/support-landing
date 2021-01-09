@@ -1,0 +1,19 @@
+fragment ServiceSection on ServiceSection {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  supportBlocks {
+    ... on SupportBlock {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  page {
+    ... on Page {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

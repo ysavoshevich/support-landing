@@ -1,0 +1,17 @@
+fragment GetNotifiedSection on GetNotifiedSection {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  heading
+  text
+  inputPlaceholder
+  buttonText
+  page {
+    ... on Page {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

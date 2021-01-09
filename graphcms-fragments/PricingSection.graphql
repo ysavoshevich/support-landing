@@ -1,0 +1,21 @@
+fragment PricingSection on PricingSection {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  heading
+  text
+  pricingBlocks {
+    ... on PricingBlock {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  page {
+    ... on Page {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}
