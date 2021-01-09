@@ -1,0 +1,21 @@
+fragment TestimonialSection on TestimonialSection {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  heading
+  text
+  testimonialBlocks {
+    ... on TestimonialBlock {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  page {
+    ... on Page {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

@@ -2,7 +2,8 @@ require('dotenv').config()
 
 const path = require('path')
 const {
-  WPGRAPHQL_URL,
+  GRAPHCMS_ENDPOINT,
+  GRAPHCMS_TOKEN,
   GATSBY_TITLE,
   GATSBY_SITE_URL,
   GATSBY_DESCRIPTION,
@@ -26,6 +27,14 @@ module.exports = {
           require(`tailwindcss`),
           require(`./tailwind.config.js`), // Optional: Load custom Tailwind CSS configuration
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-source-graphcms',
+      options: {
+        endpoint: GRAPHCMS_ENDPOINT,
+        token: GRAPHCMS_TOKEN,
+        downloadLocalImages: true,
       },
     },
     {

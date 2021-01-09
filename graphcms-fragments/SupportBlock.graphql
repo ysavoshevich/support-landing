@@ -1,0 +1,22 @@
+fragment SupportBlock on SupportBlock {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  heading
+  text
+  icon {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+    }
+  }
+  serviceSection {
+    ... on ServiceSection {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

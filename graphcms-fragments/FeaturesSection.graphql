@@ -1,0 +1,35 @@
+fragment FeaturesSection on FeaturesSection {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  image {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+    }
+  }
+  heading
+  text
+  featureBlocks {
+    ... on FeatureBlock {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  emoji {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+    }
+  }
+  page {
+    ... on Page {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}
