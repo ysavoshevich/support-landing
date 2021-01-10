@@ -4,7 +4,10 @@ import * as Sections from '~/components/sections/index'
 
 const IndexPage = ({ data }) => {
   return (
-    <Layout>
+    <Layout
+      nav={data.graphCmsPage.sections[0]}
+      footer={data.graphCmsPage.sections[data.graphCmsPage.sections.length - 1]}
+    >
       <title>Home Page</title>
       {data.graphCmsPage.sections.map((section) => {
         const Component = Sections[section.__typename.split('_')[1]]
@@ -46,6 +49,18 @@ export const query = graphql`
           text
           inputPlaceholder
           buttonText
+        }
+        ... on GraphCMS_Navbar {
+          links {
+            text
+            sectionName
+          }
+        }
+        ... on GraphCMS_Footer {
+          links {
+            text
+            to
+          }
         }
         ... on GraphCMS_HeroSection {
           title

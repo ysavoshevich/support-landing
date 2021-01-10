@@ -17,7 +17,7 @@ export default function WorkHardSection({
       <div className="container flex flex-col-reverse justify-center px-5 mx-auto md:px-24 lg:px-0 lg:flex-row">
         <div className="pt-12 lg:w-5/12">
           <h2 className="text-center lg:text-left text-40px mb-7 ">
-            {heading}
+            {heading}{' '}
             <img className="inline mb-2" src={emoji.url} alt="sdf"></img>
           </h2>
           <p className="mb-8 text-center lg:text-left text-18px">{text}</p>
@@ -33,7 +33,7 @@ export default function WorkHardSection({
             })}
           </div>
           <Link
-            className="flex items-center justify-start pl-5 transition-transform duration-300 cursor-pointer group"
+            className="flex items-center justify-start pl-5 transition-transform duration-300 cursor-pointer lg:pl-0 group"
             style={{ color: '#3183FF' }}
             to="/"
           >

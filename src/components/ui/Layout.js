@@ -2,12 +2,12 @@ import React from 'react'
 import Navbar from '~/components/ui/Navbar'
 import Footer from '~/components/ui/Footer'
 
-export default function Layout({ children }) {
+export default function Layout({ children, nav, footer }) {
   return (
     <>
-      <Navbar />
+      <Navbar links={nav.links} />
       <main>{children}</main>
-      <Footer />
+      <Footer links={footer.links} />
     </>
   )
 }

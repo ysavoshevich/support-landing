@@ -11,11 +11,19 @@ fragment Page on Page {
       remoteTypeName: __typename
       remoteId: id
     }
+    ... on Footer {
+      remoteTypeName: __typename
+      remoteId: id
+    }
     ... on GetNotifiedSection {
       remoteTypeName: __typename
       remoteId: id
     }
     ... on HeroSection {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+    ... on Navbar {
       remoteTypeName: __typename
       remoteId: id
     }

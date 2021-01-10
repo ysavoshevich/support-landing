@@ -6,7 +6,7 @@ import OpenIcon from '~/assets/images/menu-open-icon-dark.svg'
 import NavLink from '~/components/ui/NavLink'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
-export default function Navbar() {
+export default function Navbar({ links }) {
   const [isOnTop, setIsOnTop] = useState(true)
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -41,11 +41,10 @@ export default function Navbar() {
           </div>
           <ul className="flex items-center justify-end w-full lg:justify-between">
             <div className="items-center hidden lg:flex">
-              <NavLink text="Home" to="hero" />
-              <NavLink text="Service" to="service" />
-              <NavLink text="Features" to="features" />
-              <NavLink text="Pricing" to="pricing" />
-              <NavLink text="Testimonials" to="testimonials" />
+              {links &&
+                links.map(({ text, sectionName }, i) => {
+                  return <NavLink text={text} to={sectionName} key={i} />
+                })}
               <SearchIcon />
             </div>
             <div className="flex items-center">

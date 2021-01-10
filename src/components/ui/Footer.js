@@ -2,7 +2,7 @@ import React from 'react'
 import FooterLogo from '~/assets/images/footer-logo.svg'
 import FooterLink from '~/components/ui/FooterLink'
 
-export default function Footer() {
+export default function Footer({ links }) {
   return (
     <footer
       style={{ backgroundColor: '#2B293E' }}
@@ -15,11 +15,10 @@ export default function Footer() {
         </div>
         <div>
           <ul className="flex flex-wrap items-center justify-center ">
-            <FooterLink to="/" text="Home" />
-            <FooterLink to="/" text="Advertise" />
-            <FooterLink to="/" text="Supports" />
-            <FooterLink to="/" text="Marketing" />
-            <FooterLink to="/" text="FAQ" />
+            {links &&
+              links.map(({ text, to }, i) => {
+                return <FooterLink to={to} text={text} key={i} />
+              })}
           </ul>
         </div>
       </div>
