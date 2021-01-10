@@ -39,13 +39,14 @@ export default function TestimonialSection({
       >
         {splitArrIntoChunks(testimonialBlocks, 2).map((chunk, i) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide className="px-5 lg:px-0" key={i}>
               {chunk.map(({ text, username, name, avatar }, i) => (
                 <Testimonial
                   text={text}
                   username={username}
                   name={name}
                   avatar={avatar}
+                  key={i}
                 />
               ))}
             </SwiperSlide>

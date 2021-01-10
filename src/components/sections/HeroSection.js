@@ -42,7 +42,7 @@ export default function HeroSection({
             ></img>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-4">
           <img
             className="max-w-xs p-5 sm:max-w-md lg:max-w-xl"
             src={image.url}

@@ -4,12 +4,8 @@ import RightArrow from '~/assets/images/right-arrow.svg'
 export default function SupportBlock({ heading, text, icon }) {
   return (
     <div className="flex flex-col px-5 py-5 mb-5 transition-all duration-500 lg:px-10 lg:py-12 lg:flex-row lg:mb-0 lg:mr-5 lg:w-5/12 bg-lightGrey hover:bg-white hover:shadow-service">
-      {/* <Support
-        className="mr-4"
-        style={{ minWidth: '60px', minHeight: '60px' }}
-      /> */}
       <img
-        className="mr-4"
+        className="self-start mr-4"
         style={{ minWidth: '60px', minHeight: '60px' }}
         src={icon.url}
         alt="sdf"

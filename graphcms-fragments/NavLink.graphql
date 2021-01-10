@@ -1,0 +1,15 @@
+fragment NavLink on NavLink {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  text
+  sectionName
+  navbar {
+    ... on Navbar {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

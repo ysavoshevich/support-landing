@@ -1,0 +1,19 @@
+fragment Footer on Footer {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  links {
+    ... on FooterLink {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  page {
+    ... on Page {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}
