@@ -20,39 +20,41 @@ export default function TestimonialSection({
         <p className="text-center">{heading}</p>
       </div>
 
-      <Swiper
-        loop={true}
-        slidesPerView={1}
-        spaceBetween={20}
-        centeredSlides={true}
-        breakpoints={{
-          600: {
-            slidesPerView: 2,
-          },
-          1000: {
-            slidesPerView: 2,
-          },
-          1400: {
-            slidesPerView: 4,
-          },
-        }}
-      >
-        {splitArrIntoChunks(testimonialBlocks, 2).map((chunk, i) => {
-          return (
-            <SwiperSlide className="px-5 lg:px-0" key={i}>
-              {chunk.map(({ text, username, name, avatar }, i) => (
-                <Testimonial
-                  text={text}
-                  username={username}
-                  name={name}
-                  avatar={avatar}
-                  key={i}
-                />
-              ))}
-            </SwiperSlide>
-          )
-        })}
-      </Swiper>
+      <div className="overflow-x-hidden">
+        <Swiper
+          loop={true}
+          slidesPerView={1}
+          spaceBetween={20}
+          centeredSlides={true}
+          breakpoints={{
+            600: {
+              slidesPerView: 2,
+            },
+            1000: {
+              slidesPerView: 2,
+            },
+            1400: {
+              slidesPerView: 4,
+            },
+          }}
+        >
+          {splitArrIntoChunks(testimonialBlocks, 2).map((chunk, i) => {
+            return (
+              <SwiperSlide className="px-5 lg:px-0" key={i}>
+                {chunk.map(({ text, username, name, avatar }, i) => (
+                  <Testimonial
+                    text={text}
+                    username={username}
+                    name={name}
+                    avatar={avatar}
+                    key={i}
+                  />
+                ))}
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
+      </div>
     </section>
   )
 }

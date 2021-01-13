@@ -54,11 +54,11 @@ export default function Navbar({ links }) {
                 </div>
                 <NavLink text="Login" to="/" />
               </div>
-              <button className="hidden px-2 py-2 rounded-sm lg:block bg-lightOrange text-brown">
+              <button className="hidden px-2 py-2 transition-colors duration-300 rounded-sm hover:bg-darkBlue hover:text-white lg:block bg-lightOrange text-brown">
                 Get Started
               </button>
               <OpenIcon
-                className="block cursor-pointer lg:hidden"
+                className="block cursor-pointer lg:hidden "
                 onClick={openMenuHandler}
               />
             </div>
