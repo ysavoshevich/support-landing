@@ -25,20 +25,24 @@ html {
   background-color: transparent !important;
   padding: 5px;
   text-transform: capitalize;
+  outline: none;
 }
 .rc-tabs-tab .rc-tabs-tab-btn {
   font-weight: normal;
+  outline: none;
 }
 .rc-tabs-tab.rc-tabs-tab-active {
   color: #ffc059;
+  outline: none;
 }
 
 .rc-tabs-tab.rc-tabs-tab-active svg {
-  fill: rgba(255, 255, 255, 0.3);
+  // fill: rgba(255, 255, 255, 0.3);
 }
 
 .rc-tabs-tab.rc-tabs-tab-active svg path {
   fill: #ffc059;
+  opacity: 1;
 }
 
 .rc-tabs-ink-bar {

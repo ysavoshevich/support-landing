@@ -26,21 +26,25 @@ function TabContent() {
     }
   `)
   return (
-    <div className="relative w-1/2 mt-20 text-white">
-      <h2 className=" text-64px">
-        Introduce quality feature that boost your website rank & performance
-      </h2>
-      <p>
-        Build an incredible workplace and grow your business with Gusto’s
-        all-in-one platform with amazing contents. Get your tests delivered at
-        let home collect sample from the victory of the supplies design system.
-      </p>
-      <button>More Details</button>
+    <div className="flex flex-col items-center px-4 mt-20 text-white lg:items-start lg:flex-row">
+      <div className="w-full mb-2 lg:pr-24 lg:w-1/2">
+        <h2 className="mb-5 text-center text-40px lg:text-left">
+          Introduce quality feature that boost your website rank & performance
+        </h2>
+        <p className="mb-5 text-center text-18px lg:text-left">
+          Build an incredible workplace and grow your business with Gusto’s
+          all-in-one platform with amazing contents. Get your tests delivered at
+          let home collect sample from the victory of the supplies design
+          system.
+        </p>
+        <button className="block px-4 py-3 mx-auto text-white transition-colors duration-300 rounded-md hover:bg-darkBlue bg-regularOrange">
+          More Details
+        </button>
+      </div>
       <Image
-        style={{ position: 'absolute', top: '0', left: '100%', width: '100%' }}
         fluid={data.img.childImageSharp.fluid}
         alt="A corgi smiling happily"
-        className="rounded-md"
+        className="w-full rounded-md lg:w-1/2 "
       />
     </div>
   )
@@ -51,7 +55,7 @@ function CustomTabBar({ icon, ...props }) {
   switch (icon) {
     case 'dollar':
       return (
-        <div className="px-5 text-white">
+        <div className="px-5 pb-2 text-white">
           <DollarSign />
           <p>Budget Overview</p>
         </div>
@@ -83,6 +87,7 @@ function CustomTabBar({ icon, ...props }) {
       return (
         <div className="px-5 text-white">
           <Arrows />
+          <p>Custom Dashboard</p>
         </div>
       )
     default:
@@ -98,18 +103,17 @@ export default function SlideFeaturesSection() {
   return (
     <section
       style={{ backgroundColor: '#353448' }}
-      className="relative block py-48"
+      className="relative block py-32"
     >
-      <div className="justify-center pl-40 mx-auto mb-20">
+      <div className="container pl-0 mx-auto mb-20 lg:pl-64 ">
         <Tabs defaultActiveKey="1" className="relative">
           <div
             className="absolute w-full bg-grey"
-            style={{ top: '51px', height: '1px' }}
+            style={{ top: '80px', height: '1px' }}
           ></div>
           <TabPane key={'1'} tab={<CustomTabBar icon="dollar" />}>
             <TabContent />
           </TabPane>
-          <p className="text-white">Custom Dashboard</p>
           <TabPane key={'2'} tab={<CustomTabBar icon="settings" />}>
             <TabContent />
           </TabPane>

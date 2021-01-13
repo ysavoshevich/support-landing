@@ -8,7 +8,6 @@ const IndexPage = ({ data }) => {
       nav={data.graphCmsPage.sections[0]}
       footer={data.graphCmsPage.sections[data.graphCmsPage.sections.length - 1]}
     >
-      <title>Home Page</title>
       {data.graphCmsPage.sections.map((section) => {
         const Component = Sections[section.__typename.split('_')[1]]
         if (!Component) return null
